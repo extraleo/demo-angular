@@ -1,0 +1,8 @@
+<p>name-editor works!</p>
+
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <button mat-button (click)="addFields()">New Field</button>
+  <formly-form [form]="profileForm" [fields]="fields" [model]="model"></formly-form>
+  <button mat-button type="submit">Submit</button>
+</form>
